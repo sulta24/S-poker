@@ -1,6 +1,6 @@
+// src/index.js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Poker from './Poker';
+import App from './App'; // Вместо Poker теперь App
 
-ReactDOM.render(<Poker />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));

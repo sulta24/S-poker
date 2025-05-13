@@ -44,7 +44,7 @@ const AI = ({ data, showCards }) => {
   );
   return (
     <StyledAI top={data.id === 'ai2'} id={data.id}>
-      <h4>{`AI Opponent ${data.id.slice(-1)}`}</h4>
+      <h4>{`Bot ${data.id.slice(-1)}`}</h4>
       <div className="ai">
         <div className="ai-card-container">{cardContainer}</div>
       </div>
