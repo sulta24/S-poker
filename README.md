@@ -1,77 +1,73 @@
 # ♠️ S-Poker — Texas Hold'em Online Game
 
-**S-Poker** — это онлайн-реализация покера (Техасский Холдем), предназначенная как для игры с друзьями, так и для одиночного режима.  
-В приложении реализована логика ставок, выбор действий (фолд, чек, бет), определение победителя и визуализация стола.  
-В будущем планируется полноценный мультиплеер и развитие AI-соперников.
+🎥 **Demo:** [https://youtu.be/Ql5WW0ta3jU](https://youtu.be/Ql5WW0ta3jU)
+
+**S-Poker** is an online implementation of Texas Hold'em Poker, designed for both playing with friends and solo mode.  
+The app includes betting logic, player actions (fold, check, bet), winner determination, and a visualized poker table.  
+Future plans include a full multiplayer system and the development of AI opponents.
 
 ---
 
-## 🚀 Установка и запуск
+## 🚀 Installation and Run
 
-**Технологический стек:** `React`, `Node.js`
+**Tech Stack:** `React`, `Node.js`
 
-### Установка:
+### Installation:
 
 ```bash
 npm install
 ```
 
-> ⚠️ **Важно:** Обязательно используйте **React 16**, так как некоторые зависимости не поддерживают более новые версии.
+> ⚠️ **Important:** Use **React 16**, as some dependencies do not support newer versions.
 
-### Запуск:
+### Run:
 
 ```bash
 npm start
 ```
 
-Это запустит локальный сервер на порту **3000**.  
-Более подробная информация — в файле `server.js`.
+This will launch a local server on **port 3000**.  
+For more details, check the `server.js` file.
 
 ---
 
-## 🧩 Структура проекта и разработка
+## 🧩 Project Structure and Development
 
-- Логика покера реализована в файле `Poker.js`, взятом с открытых исходников и доработанном вручную.
-- Компоненты интерфейса (карты, доска, панель управления) организованы в папке `components/`.
-- Архитектура построена с разделением логики и UI, что упрощает отладку и масштабирование.
-- Интерфейс пока не адаптирован под мобильные устройства.
-
----
-
-## ✨ Уникальные особенности
-
-- Самописный движок покера с возможностью полной кастомизации.
-- Минималистичный и современный визуал.
-- Полный контроль над игрой и ходами игроков.
-- Все игровые процессы находятся под контролем на клиентской стороне.
+- Poker logic is implemented in the `Poker.js` file, based on open-source code and manually refined.
+- UI components (cards, board, control panel) are organized in the `components/` folder.
+- The architecture separates logic from the UI, making debugging and scaling easier.
+- The interface is not yet optimized for mobile devices.
 
 ---
 
-## ⚖️ Компромиссы и упрощения
+## ✨ Unique Features
 
-- AI-игроки пока могут только чекать и продолжать игру при отсутствии игрока.
-- Ставки реализованы только для основного игрока.
-- Мультиплеер на стадии разработки, но архитектура уже спроектирована с его учётом.
-- Интерфейс требует адаптации под разные устройства и улучшения UX/UI.
-
----
-
-## 🐞 Известные проблемы
-
-- Возможны ошибки при установке зависимостей.
-  Убедитесь, что все библиотеки совместимы с **React 16**.
-- Некоторые части интерфейса работают нестабильно или требуют доработки.
-- Отсутствует регистрация игроков и управление сессиями.
+- Custom-built poker engine with full customization support.
+- Minimalistic and modern visual design.
+- Complete control over gameplay and player actions.
+- All core game logic runs on the client side.
 
 ---
 
-## 🧠 Почему выбран этот стек
+## ⚖️ Trade-offs and Simplifications
 
-- **React** — удобная и широко используемая библиотека для построения интерфейсов.
-- **Node.js** — лёгкий и гибкий фреймворк для серверной логики, прекрасно сочетается с React.
+- AI players can currently only check and continue when no human player is present.
+- Betting is implemented only for the main player.
+- Multiplayer is under development, but the architecture is already designed with it in mind.
+- The interface needs responsiveness improvements and better UX/UI design.
 
 ---
 
-## 📹 Видео-демо
-https://youtu.be/Ql5WW0ta3jU
+## 🐞 Known Issues
 
+- Possible dependency installation errors.  
+  Make sure all libraries are compatible with **React 16**.
+- Some interface components may behave inconsistently or need further polishing.
+- No player registration or session management is currently implemented.
+
+---
+
+## 🧠 Why This Stack
+
+- **React** — a popular and convenient library for building user interfaces.
+- **Node.js** — a lightweight and flexible framework for server logic that integrates well with React.
